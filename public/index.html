@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
     <script src="scripts/client.js"></script>
+    <script src="scripts/controllers/harry.controller.js"></script>
+    <script src="scripts/controllers/hermione.controller.js"></script>
+    <script src="scripts/controllers/ron.controller.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
     <title>Angular Router exercise</title>
+    <base href="/">
 </head>
-<body>
+<body ng-app="myApp">
     <h1>Harry Potter and the Angular Router(s)</h1>
+    <nav>
+        <ul>
+            <li><a href="/harry">Harry</a></li>
+            <li><a href="/hermione">Hermione</a></li>
+            <li><a href="/ron">Ron</a></li>
+        </ul>
+    </nav>
+    <br>
+    <ng-view></ng-view>
 </body>
 </html>
