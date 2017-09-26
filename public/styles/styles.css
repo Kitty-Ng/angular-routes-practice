@@ -25,3 +25,8 @@ li{
     padding: 15px;
     border-radius: 10px;
 }
+
+.characterProfile{
+    background-color:white;
+    color: navy;
+}
